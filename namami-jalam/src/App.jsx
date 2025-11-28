@@ -15,7 +15,6 @@ import UserReport from './pages/user/UserReport.jsx';
 // NGO Pages
 import NgoHome from './pages/ngo/NgoHome.jsx';
 import NgoProfile from './pages/ngo/NgoProfile.jsx';
-import NgoLeaderboard from './pages/ngo/NgoLeaderboard.jsx';
 import NgoCommunity from './pages/ngo/NgoCommunity.jsx';
 import NgoDrives from './pages/ngo/NgoDrives.jsx';
 
@@ -64,7 +63,7 @@ const App = () => {
         {/* NGO Routes */}
         <Route path="/ngo/home" element={<NgoHome />} />
         <Route path="/ngo/profile" element={<NgoProfile />} />
-        <Route path="/ngo/leaderboard" element={<NgoLeaderboard />} />
+
         <Route path="/ngo/community" element={<NgoCommunity />} />
         <Route path="/ngo/drives" element={<NgoDrives />} />
 

@@ -43,11 +43,11 @@ const Slideshow = () => {
       {/* Cinematic Overlay */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.6))",
-        }}
+        // className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0 pointer-events-none"
+        // style={{
+        //   background:
+        //     "linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.6))",
+        // }}
       />
 
       {/* Background Images */}
@@ -57,8 +57,7 @@ const Slideshow = () => {
           ref={imageRefs[i]}
           src={src}
           alt={`slide ${i + 1}`}
-          className="absolute inset-0 w-full h-full object-cover object-center opacity-0 
-           scale-105 brightness-50 contrast-110 grayscale z-0"
+          className="absolute w-7xl h-[80vh] object-cover opacity-0 filter brightness-55 contrast-125 saturate-150 hue-rotate-10 rounded-md shadow-lg shadow-black/30"
           style={{ imageRendering: "auto" }}
         />
       ))}
@@ -71,10 +70,10 @@ const Slideshow = () => {
             key={i}
             ref={textRefs[i]}
             className="opacity-0 translate-y-2 relative px-8 py-5 rounded-xl shadow-xl"
-            style={{
+            // style={{
               
-              backdropFilter: "blur(6px)",
-            }}
+            //   backdropFilter: "blur(6px)",
+            // }}
           >
             <h2 className="text-white text-3xl md:text-5xl font-semibold tracking-wide drop-shadow-xl">
               {t}

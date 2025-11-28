@@ -57,7 +57,7 @@ const Process = () => {
   return (
     <div
       id="how-it-works" style={{ background: 'teal-50'}}
-      className="max-w-3xl mx-auto px-6 py-16 flex flex-col gap-16  bg-teal-50">
+      className="max-w-screen mx-auto px-6 py-16 flex flex-col gap-16  bg-teal-50">
     
       <h3 className="text-3xl font-bold text-center text-[var(--ocean-700)] mb-8">
         The AI Journey: From Image to Action

@@ -78,14 +78,7 @@ const GovHome = () => {
         <section>
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-3xl font-bold text-gray-800">Recent Reports</h2>
-            <div className="flex gap-3">
-              <button onClick={() => setViewReports(true)} className={`px-4 py-2 rounded-lg ${viewReports ? 'bg-blue-600 text-white' : 'bg-white border'}`}>
-                <FaClipboardList className="inline mr-2" /> Reports
-              </button>
-              <button className="px-4 py-2 rounded-lg bg-white border">
-                <FaChartLine className="inline mr-2" /> Analytics
-              </button>
-            </div>
+           
           </div>
 
           <div className="space-y-4">

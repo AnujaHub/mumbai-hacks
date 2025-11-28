@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import gsap from "gsap";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 
 // Icons
@@ -21,6 +22,7 @@ import {
 } from "react-icons/fa";
 
 gsap.registerPlugin(useGSAP);
+
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -61,7 +63,6 @@ const Navbar = () => {
       ? [
           { label: "Dashboard", path: "/ngo/home", icon: <FaChartBar /> },
           { label: "Drives", path: "/ngo/drives", icon: <FaBroom /> },
-          { label: "Leaderboard", path: "/ngo/leaderboard", icon: <FaTrophy /> },
           { label: "Community", path: "/ngo/community", icon: <FaUsers /> },
         ]
       : userType === "gov"
@@ -245,3 +246,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

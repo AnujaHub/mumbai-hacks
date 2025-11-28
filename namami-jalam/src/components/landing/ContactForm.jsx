@@ -13,7 +13,7 @@ const ContactForm = () => {
   }, []);
 
   return (
-    <div id="contact" className="py-16" style={{background: 'linear-gradient(180deg, rgba(0,31,63,0.02), rgba(255,255,255,0.0))'}}>
+    <div id="contact" className="py-16" style={{background: 'linear-gradient(180deg, rgba(0,31,63,0.02)'}}>
       <h2 className="text-4xl font-bold text-center mb-8" style={{color: 'var(--ocean-900)'}}>Get in Touch</h2>
       <div
         ref={formRef}
