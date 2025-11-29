@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Government Registration — Namami Jalam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card p-4 shadow-sm">
+
+        <h3 class="mb-3 text-center">Government Registration</h3>
+
+        <form method="post">
+          {% csrf_token %}
+
+          <div class="mb-3">
+            <label class="form-label">Government Department</label>
+            <input type="text" class="form-control" name="gov_dept" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Designation</label>
+            <input type="text" class="form-control" name="gov_desg" required>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">

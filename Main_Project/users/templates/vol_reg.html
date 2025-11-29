@@ -1,0 +1,54 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Volunteer Registration — Namami Jalam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card p-4 shadow-sm">
+
+        <h3 class="mb-3 text-center">Volunteer Registration</h3>
+
+        <form method="post" action="{% url "vol_reg" %}">
+          {% csrf_token %}
+
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              name="fullname" 
+              placeholder="Enter your full name"
+              required
+            >
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input 
+              type="tel" 
+              class="form-control" 
+              name="phone_no" 
+              placeholder="Enter your phone number"
+              required
+            >
+          </div>
+
+          <button type="submit" class="btn btn-info w-100">
+            Register as Volunteer
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
