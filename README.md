@@ -113,8 +113,7 @@ The system enables users to upload images of polluted areas through a web app, w
 <ul>
   <li>React</li>
   <li>TailwindCSS</li>
-  <li>GSAP</li>
-  <li>React Icons</li>
+  <li>GSAP Animations</li>
 </ul>
 
 <h3>Backend</h3>
@@ -127,7 +126,7 @@ The system enables users to upload images of polluted areas through a web app, w
 
 <h2>How It Works</h2>
 <ul>
-  <li>User uploads an image</li>
+  <li>A real time image is captured</li>
   <li>React sends it to the Django API</li>
   <li>AI model analyzes pollution level</li>
   <li>Backend returns results</li>
@@ -168,3 +167,4 @@ through AI and community participation.
 
 </body>
 </html>
+
